@@ -8,33 +8,34 @@
     <title>Google Developers | For Practice</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <script src="https://use.fontawesome.com/c7fb0d6551.js"></script>
 </head>
 
 <body>
-    <div class="header-wrapper">
-        <input type="button" class="burger-menu pointer" value="☰">
-        <a href="#" class="header-logo">
-            <img src="https://www.gstatic.com/devrel-devsite/prod/v4c1e9ea53f4457a5de1027b4eeb4608c1000a427e20261ba1771dd3fc26d5df8/developers/images/lockup.svg"
-                alt="Google Developers">
-        </a>
-        <ul class="nav-bar">
-            <li><a href="#">Products<span class="rotate">▾</span></a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Learn</a></li>
-            <li><a href="#">Developer Communities</a></li>
-            <li><a href="#">Developer Profile</a></li>
-            <li><a href="#">Blog</a></li>
-            <!--     <li><a href="#">More</a></li> -->
-        </ul>
-        <div class="search">
-            <input type="text" placeholder="Search" class="pointer">
-        </div>
-        <div class="language-select">
-            <button class="language pointer">English</button>
-            <!-- <ul class="language-list">
+    <div class="wrap">
+        <div class="header-wrapper">
+            <input type="button" class="burger-menu pointer" value="☰">
+            <a href="#" class="header-logo">
+                <img src="https://www.gstatic.com/devrel-devsite/prod/v4c1e9ea53f4457a5de1027b4eeb4608c1000a427e20261ba1771dd3fc26d5df8/developers/images/lockup.svg"
+                    alt="Google Developers">
+            </a>
+            <ul class="nav-bar">
+                <li><a href="#">Products<span class="rotate">▾</span></a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Developer Communities</a></li>
+                <li><a href="#">Developer Profile</a></li>
+                <li><a href="#">Blog</a></li>
+                <!--     <li><a href="#">More</a></li> -->
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="Search" class="pointer">
+            </div>
+            <div class="language-select">
+                <button class="language pointer">English</button>
+                <!-- <ul class="language-list">
                 <li>English</li>
                 <li>Bahasa Indonesia</li>
                 <li>Deutsch</li>
@@ -46,13 +47,150 @@
                 <li>日本語</li>
                 <li>한국어</li>
             </ul> -->
+            </div>
+            <div class="profile-menu pointer">
+                <img src="img/menu.png" alt="">
+            </div>
+            <div class="self-profile pointer">
+                <img src="https://lh3.googleusercontent.com/ogw/ADea4I4v1-cTfKHJlXT93Nbb5Kj8XY6PIe3PnOZdY9Dl0w=s64-c-mo"
+                    alt="self-pic">
+            </div>
         </div>
-        <div class="profile-menu pointer">
-            <img src="img/menu.png" alt="">
-        </div>
-        <div class="self-profile pointer">
-            <img src="https://lh3.googleusercontent.com/ogw/ADea4I4v1-cTfKHJlXT93Nbb5Kj8XY6PIe3PnOZdY9Dl0w=s64-c-mo"
-                alt="self-pic">
+        <div class="main">
+            <div class="section section-start">
+                <figure class="hero-start">
+                    <a href="https://developers.google.com/learn" target="_blank">
+                        <img src="https://developers.google.com/site-assets/images/home/learn_hero_720.jpg"
+                            alt="learn-hero">
+                    </a>
+                </figure>
+                <div class="start-content">
+                    <a href="https://developers.google.com/learn" target="_blank">
+                        <h1 class="link-title">Learn to build anything with Google</h1>
+                    </a>
+                    <p class="inner-content">Join the one-stop destination for self-guided coding exercises, quizzes,
+                        technical articles, and
+                        video tutorials. Gain the software skills you need to develop with Google's technology.</p>
+                    <div class="btn btn-blue"><a href="https://developers.google.com/learn">Start learning</a></div>
+                </div>
+            </div>
+            <div class="section section-service">
+                <h2 class="title text-center">Build <span class="bold">anything</span> with Google</h2>
+                <div class="service-list">
+                    <div class="service">
+                        <figure class="service-icon">
+                            <a href="#">
+                                <img src="https://developer.android.com/images/brand/Android_Robot_480.png"
+                                    alt="Android" class="icon">
+                            </a>
+                        </figure>
+                        <div class="service-name">Android</div>
+                    </div>
+                    <div class="service">
+                        <figure class="service-icon">
+                            <a href="#">
+                                <img src="https://www.gstatic.com/images/branding/product/2x/google_cloud_64dp.png"
+                                    alt="Google Cloud" class="icon">
+                            </a>
+                        </figure>
+                        <div class="service-name">Google Cloud</div>
+                    </div>
+                    <div class="service">
+                        <figure class="service-icon">
+                            <a href="#">
+                                <img src="https://www.gstatic.com/images/branding/product/2x/firebase_64dp.png"
+                                    alt="Firebase" class="icon">
+                            </a>
+                        </figure>
+                        <div class="service-name">Firebase</div>
+                    </div>
+                    <div class="service">
+                        <figure class="service-icon">
+                            <a href="#">
+                                <img src="https://www.gstatic.com/images/branding/product/2x/flutter_64dp.png"
+                                    alt="Flutter" class="icon">
+                            </a>
+                        </figure>
+                        <div class="service-name">Flutter</div>
+                    </div>
+                    <div class="service">
+                        <figure class="service-icon">
+                            <a href="#">
+                                <img src="https://www.gstatic.com/images/branding/product/2x/assistant_64dp.png"
+                                    alt="Google Assistant" class="icon">
+                            </a>
+                        </figure>
+                        <div class="service-name">Google Assistant</div>
+                    </div>
+                    <div class="service">
+                        <figure class="service-icon">
+                            <a href="#">
+                                <img src="https://www.gstatic.com/images/branding/product/2x/maps_64dp.png"
+                                    alt="Maps Platform" class="icon">
+                            </a>
+                        </figure>
+                        <div class="service-name">Maps Platform</div>
+                    </div>
+                    <div class="service">
+                        <figure class="service-icon">
+                            <a href="#">
+                                <img src="https://developers.google.com/site-assets/images/products/tensorflow-logo-196_480.png"
+                                    alt="TensorFlow" class="icon">
+                            </a>
+                        </figure>
+                        <div class="service-name">TensorFlow</div>
+                    </div>
+                    <div class="service">
+                        <figure class="service-icon">
+                            <a href="#">
+                                <img src="https://developers.google.com/web/images/web-fundamentals-icon192x192_480.png"
+                                    alt="Web" class="icon">
+                            </a>
+                        </figure>
+                        <div class="service-name">Web</div>
+                    </div>
+                    <div class="service">
+                        <figure class="service-icon">
+                            <a href="#">
+                                <img src="img/ads_192px_clr.png" alt="Google Ads" class="icon">
+                            </a>
+                        </figure>
+                        <div class="service-name">Google Ads</div>
+                    </div>
+                    <div class="service">
+                        <figure class="service-icon">
+                            <a href="#">
+                                <img src="https://developers.google.com/homepage-assets/images/chromeos-logo_480.png"
+                                    alt="Chrome OS" class="icon">
+                            </a>
+                        </figure>
+                        <div class="service-name">Chrome OS</div>
+                    </div>
+                    <div class="service">
+                        <figure class="service-icon">
+                            <a href="#">
+                                <img src="https://www.gstatic.com/images/branding/product/2x/play_prism_64dp.png"
+                                    alt="Google Play" class="icon">
+                            </a>
+                        </figure>
+                        <div class="service-name">Google Play</div>
+                    </div>
+                    <div class="service">
+                        <figure class="service-icon">
+                            <a href="#">
+                                <img src="https://www.gstatic.com/images/branding/product/2x/youtube_64dp.png"
+                                    alt="YouTube" class="icon">
+                            </a>
+                        </figure>
+                        <div class="service-name">YouTube</div>
+                    </div>
+                </div>
+                <div class="btn btn-blue center">
+                    <a href="https://developers.google.com/products" target="_blank">
+                        View all developer products
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </body>

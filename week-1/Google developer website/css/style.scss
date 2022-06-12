@@ -1,8 +1,14 @@
+// 
+$link-blue: #1a73e8;
+$dark-blue: #1765cc;
+$content-black: #202124;
+
+// 
+
 *,
 *:before,
 *:after {
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
     // outline: solid 1px black;
 }
 
@@ -40,6 +46,12 @@ a {
         color: #5f6368;
         font-size: 18px;
     }
+}
+
+.header-wrapper>*,
+*:before,
+*:after {
+    font-family: "Roboto", sans-serif;
 }
 
 .header-wrapper {
@@ -122,6 +134,144 @@ a {
     cursor: pointer;
 }
 
+// main section
+.main>*,
+*:before,
+*:after {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.main {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+// section
+.section {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+// section-start
+
+.section-start {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #f1f3f4;
+
+    .hero-start {
+        margin: 40px 0px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// section service
+.section-service {
+    margin-bottom: 100px;
+}
+
+.service-list {
+    margin-top: 32px;
+    margin-bottom: 64px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.service {
+    flex: 1 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-icon {
+    height: 96px;
+    margin: 0;
+}
+
+.icon {
+    width: 64px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.service-name {
+    font-size: 14px;
+}
+
+// 功能性、共用
+
+.title {
+    color: $content-black;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.link-title {
+    color: $link-blue;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 24px;
+
+    &:active {
+        text-decoration: underline;
+    }
+}
+
+.inner-content {
+    color: $content-black;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+
+.btn {
+    padding: 0 24px;
+    display: inline-block;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.btn-blue {
+    background-color: $link-blue;
+    margin: 4px 4px 4px 0;
+
+    &:hover {
+        background-color: $dark-blue;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    a {
+        color: #fff;
+        line-height: 36px;
+    }
+}
+
+
+.bold {
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.center {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 // media queries
 
 @media screen and (min-width: 600px) {
@@ -134,7 +284,7 @@ a {
             border-radius: 5px;
             font-size: 16px;
             padding: 5px 11px;
-            color: #202124;
+            color: $content-black;
 
             &:before {
                 font-family: 'FontAwesome';

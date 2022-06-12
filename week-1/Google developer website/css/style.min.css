@@ -2,7 +2,6 @@
 *:before,
 *:after {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
 }
 
 html,
@@ -35,6 +34,12 @@ a {
   content: "\f002";
   color: #5f6368;
   font-size: 18px;
+}
+
+.header-wrapper > *,
+*:before,
+*:after {
+  font-family: "Roboto", sans-serif;
 }
 
 .header-wrapper {
@@ -115,6 +120,136 @@ a {
 
 .pointer {
   cursor: pointer;
+}
+
+.main > *,
+*:before,
+*:after {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.main {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.section {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.section-start {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #f1f3f4;
+}
+
+.section-start .hero-start {
+  margin: 40px 0px;
+}
+
+.section-start .hero-start img {
+  width: 100%;
+}
+
+.section-service {
+  margin-bottom: 100px;
+}
+
+.service-list {
+  margin-top: 32px;
+  margin-bottom: 64px;
+  padding-bottom: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.service {
+  flex: 1 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-icon {
+  height: 96px;
+  margin: 0;
+}
+
+.icon {
+  width: 64px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.service-name {
+  font-size: 14px;
+}
+
+.title {
+  color: #202124;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.link-title {
+  color: #1a73e8;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  margin-bottom: 24px;
+}
+
+.link-title:active {
+  text-decoration: underline;
+}
+
+.inner-content {
+  color: #202124;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.btn {
+  padding: 0 24px;
+  display: inline-block;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn-blue {
+  background-color: #1a73e8;
+  margin: 4px 4px 4px 0;
+}
+
+.btn-blue:hover {
+  background-color: #1765cc;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-blue a {
+  color: #fff;
+  line-height: 36px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.center {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media screen and (min-width: 600px) {
