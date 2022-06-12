@@ -257,6 +257,10 @@ a.link-title {
   transform: translate(-50%, -50%);
 }
 
+.section-expert {
+  border-bottom: 1px solid #dadce0;
+}
+
 .experts {
   display: flex;
   flex-direction: column;
@@ -297,6 +301,41 @@ a.link-title {
 
 .name {
   margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #dadce0;
+}
+
+.links {
+  padding-top: 24px;
+}
+
+.links ul {
+  margin: 0;
+}
+
+.links ul li {
+  margin: 0;
+  padding: 0 0 8px 0;
+  font-size: 14px;
+}
+
+.links ul li a {
+  color: #202124;
+}
+
+.links ul li a:hover {
+  color: #1a73e8;
+}
+
+h4.link-title {
+  margin: 1px 0 4px 0;
+  font-size: 16px;
+  color: #202124;
 }
 
 .group-content {
@@ -451,6 +490,65 @@ a.link-title {
   .language-select .language-list {
     display: none;
   }
+  .section-start {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .section-start .hero-start,
+  .section-start .start-content {
+    flex: 1 50%;
+  }
+  .section-start .start-content {
+    order: -1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section-start .start-content .btn {
+    margin-right: auto;
+  }
+  .section-service .title {
+    font-size: 44px;
+  }
+  .service {
+    flex: 1 20%;
+  }
+  .section-gathering {
+    flex-direction: row;
+  }
+  .section-news .title {
+    font-size: 32px;
+  }
+  .news-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .news {
+    flex: 1 45%;
+  }
+  .news .group-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .news .group-content .btn {
+    margin-top: auto;
+    margin-right: auto;
+  }
+  .experts {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .expert {
+    flex: 1 45%;
+  }
+  .footer-links {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .links {
+    flex: 1;
+  }
 }
 
 @media screen and (min-width: 840px) {
@@ -510,6 +608,24 @@ a.link-title {
   }
   .header-logo {
     margin-right: 32px;
+  }
+  .news-list {
+    gap: 24px;
+  }
+  .news {
+    flex: 1 20%;
+  }
+  .news figure {
+    height: 140px;
+  }
+  .news-icon {
+    width: 96px;
+  }
+}
+
+@media screen and (min-width: 1032px) {
+  .expert {
+    flex: 1;
   }
 }
 

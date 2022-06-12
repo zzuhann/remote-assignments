@@ -277,6 +277,10 @@ a.link-title {
 }
 
 // section expert
+.section-expert {
+    border-bottom: 1px solid #dadce0;
+}
+
 .experts {
     display: flex;
     flex-direction: column;
@@ -317,6 +321,43 @@ a.link-title {
 
 .name {
     margin: 0;
+}
+
+// footer
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #dadce0;
+}
+
+.links {
+    padding-top: 24px;
+
+    ul {
+        margin: 0;
+
+        li {
+            margin: 0;
+            padding: 0 0 8px 0;
+            font-size: 14px;
+
+            a {
+                color: $content-black;
+
+                &:hover {
+                    color: $link-blue;
+                }
+            }
+        }
+    }
+}
+
+h4.link-title {
+    margin: 1px 0 4px 0;
+    font-size: 16px;
+    color: $content-black;
 }
 
 // 功能性、共用
@@ -481,6 +522,85 @@ a.link-title {
             display: none;
         }
     }
+
+    .section-start {
+        flex-direction: row;
+        gap: 24px;
+
+        .hero-start,
+        .start-content {
+            flex: 1 50%;
+        }
+
+        .start-content {
+            order: -1;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .btn {
+                margin-right: auto;
+            }
+        }
+    }
+
+    .section-service {
+        .title {
+            font-size: 44px;
+        }
+    }
+
+    .service {
+        flex: 1 20%;
+    }
+
+    .section-gathering {
+        flex-direction: row;
+    }
+
+    .section-news {
+        .title {
+            font-size: 32px;
+        }
+    }
+
+    .news-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .news {
+        flex: 1 45%;
+
+        .group-content {
+            display: flex;
+            flex-direction: column;
+
+            .btn {
+                margin-top: auto;
+                margin-right: auto;
+            }
+        }
+    }
+
+    .experts {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .expert {
+        flex: 1 45%;
+    }
+
+    .footer-links {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .links {
+        flex: 1;
+    }
 }
 
 @media screen and (min-width: 840px) {
@@ -554,6 +674,29 @@ a.link-title {
 
     .header-logo {
         margin-right: 32px;
+    }
+
+    .news-list {
+        gap: 24px;
+    }
+
+    .news {
+        flex: 1 20%;
+    }
+
+    .news figure {
+        height: 140px;
+    }
+
+    .news-icon {
+        width: 96px;
+
+    }
+}
+
+@media screen and (min-width: 1032px) {
+    .expert {
+        flex: 1;
     }
 }
 
