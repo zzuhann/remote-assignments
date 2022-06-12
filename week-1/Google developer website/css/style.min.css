@@ -51,6 +51,10 @@ a {
   gap: 8px;
   height: 48px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background-color: #fff;
 }
 
 .header-logo {
@@ -153,7 +157,7 @@ a {
 }
 
 .section-service {
-  margin-bottom: 100px;
+  margin-bottom: 84px;
 }
 
 .service-list {
@@ -189,11 +193,59 @@ a {
   font-size: 14px;
 }
 
+.section-gathering {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.gather-figure {
+  margin: 0;
+  position: relative;
+}
+
+.gather-figure:after {
+  content: "";
+  background-size: 160px 160px;
+  display: block;
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  top: -45px;
+  right: 8px;
+}
+
+.gather-figure a img {
+  width: 100%;
+}
+
+.figure-first:after {
+  background-image: url("https://developers.google.com/site-assets/images/home/events-graphic.png");
+}
+
+.figure-second:after {
+  background-image: url("https://developers.google.com/site-assets/images/home/community-graphic.png");
+}
+
+.gathering {
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+}
+
+a.link-title {
+  font-size: 24px;
+}
+
+.gather-content {
+  padding: 16px;
+}
+
 .title {
   color: #202124;
   font-size: 24px;
   font-weight: 400;
   margin: 0;
+  letter-spacing: -0.8px;
 }
 
 .link-title {
@@ -221,11 +273,11 @@ a {
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;
+  margin: 4px 4px 4px 0;
 }
 
 .btn-blue {
   background-color: #1a73e8;
-  margin: 4px 4px 4px 0;
 }
 
 .btn-blue:hover {
@@ -235,6 +287,21 @@ a {
 
 .btn-blue a {
   color: #fff;
+  line-height: 36px;
+}
+
+.btn-white {
+  background-color: #fff;
+  border: 1px solid #dadce0;
+  transition: 0.2s;
+}
+
+.btn-white:hover {
+  background-color: #E8F0FE;
+}
+
+.btn-white a {
+  color: #1a73e8;
   line-height: 36px;
 }
 
