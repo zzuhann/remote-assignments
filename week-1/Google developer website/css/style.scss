@@ -145,11 +145,6 @@ a {
     font-family: 'Noto Sans', sans-serif;
 }
 
-.main {
-    padding-left: 16px;
-    padding-right: 16px;
-}
-
 // section
 .section {
     padding-top: 16px;
@@ -183,7 +178,6 @@ a {
     padding-bottom: 16px;
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
 }
 
 .service {
@@ -214,7 +208,6 @@ a {
 .section-gathering {
     display: flex;
     flex-direction: column;
-    gap: 16px;
 }
 
 .gather-figure {
@@ -254,11 +247,108 @@ a.link-title {
     font-size: 24px;
 }
 
-.gather-content {
+// section news
+.section-news {
+    background-color: #F1F3F4;
+}
+
+.news-list {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.news {
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    background-color: #fff;
+
+    figure {
+        height: 252.75px;
+    }
+}
+
+.news-icon {
+    width: 128px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// section expert
+.experts {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.expert {
+    border: 1px solid #dadce0;
+    border-radius: 8px;
     padding: 16px;
+
+    .inner-content {
+        margin-top: 10px;
+        margin-bottom: 16px;
+        font-size: 15px;
+
+        span {
+            color: #808080;
+        }
+    }
+
+    .btn {
+        margin: 0;
+    }
+}
+
+.pic {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: left;
+    border-radius: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+}
+
+.name {
+    margin: 0;
 }
 
 // 功能性、共用
+
+.group-content {
+    padding: 16px;
+
+    h3 {
+        margin-top: 0;
+    }
+
+    .inner-content {
+        font-size: 15px;
+        margin-bottom: 16px;
+    }
+}
+
+.gap-16 {
+    gap: 16px;
+}
+
+.pl-16 {
+    padding-left: 16px;
+}
+
+.pr-16 {
+    padding-right: 16px;
+}
+
+.pb-12 {
+    padding-bottom: 12px;
+}
 
 .title {
     color: $content-black;
@@ -266,6 +356,10 @@ a.link-title {
     font-weight: 400;
     margin: 0;
     letter-spacing: -0.8px;
+}
+
+.sub-title {
+    font-size: 18px;
 }
 
 .link-title {
@@ -323,6 +417,13 @@ a.link-title {
         color: $link-blue;
         line-height: 36px;
     }
+}
+
+.btn-no-border {
+    border: none;
+    padding: 0 8px;
+    position: relative;
+    left: -7px;
 }
 
 .bold {
