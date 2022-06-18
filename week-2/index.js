@@ -31,11 +31,17 @@ function toggleBoxes() {
 const showMenuBtn = document.getElementById('menu-img');
 const menu = document.querySelector('.menu');
 const body = document.body;
-const hideMenuBtn = document.getElementById('close-menu')
 showMenuBtn.addEventListener('click', showMenu);
-hideMenuBtn.addEventListener('click', hideMenu);
+const menuChildren = menu.children;
+
+menu.addEventListener('click', (event) => {
+    if (event.target.className === 'close-menu') {
+        hideMenu();
+    }
+})
 
 function showMenu() {
+    addRemoveBtn();
     menu.style.right = '0';
     body.style.overflow = 'hidden';
 }
@@ -43,4 +49,14 @@ function showMenu() {
 function hideMenu() {
     menu.style.right = '-50%';
     body.style.overflow = 'scroll';
+    const closeBtn = menuChildren[0];
+    closeBtn.remove();
+}
+
+function addRemoveBtn() {
+    let remove = document.createElement('div');
+    remove.className = 'close-menu';
+    remove.setAttribute('id', 'close-menu');
+    remove.textContent = 'X';
+    menu.prepend(remove);
 }

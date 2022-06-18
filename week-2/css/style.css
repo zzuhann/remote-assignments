@@ -204,6 +204,10 @@ h2 {
     .menu {
         display: flex;
         position: static;
+        height: auto;
+        width: auto;
+        background-color: transparent;
+        margin-bottom: 0;
     }
 
     .menu a {
@@ -238,6 +242,10 @@ h2 {
     .menu {
         display: flex;
         position: static;
+        height: auto;
+        width: auto;
+        background-color: transparent;
+        margin-bottom: 0;
     }
 
     .menu a {
