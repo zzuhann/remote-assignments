@@ -1,3 +1,4 @@
+// Assignment 1: Function and Array
 function max(numbers) {
     let biggest = null;
     for (let i = 0; i < numbers.length; i++) {
@@ -6,6 +7,7 @@ function max(numbers) {
     return biggest;
 }
 
+// Assignment 2: Object
 function calculate(args) {
     switch (args.op) {
         case '+':
@@ -20,9 +22,8 @@ function calculate(args) {
             return 'Not supported'
     }
 }
-// refer https://ithelp.ithome.com.tw/articles/10210319
-// https://stackoverflow.com/questions/18679876/convert-operator-from-string-type-to-operator-type
 
+// Assignment 3: Function, Array, and Object
 function totalPrice(data) {
     let totalProduct = data.products.length;
     let allprice = null;
