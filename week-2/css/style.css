@@ -15,7 +15,7 @@ h1 {
 
 a {
     text-decoration: none;
-    color: #f2f0f0;
+    /* color: #f2f0f0; */
 }
 
 /* 格式調整 */
@@ -44,40 +44,44 @@ h1 {
     background-color: #f2f0f0;
 }
 
-label img {
+.menu-img {
     width: 40px;
+    cursor: pointer;
 }
 
 /* menu 選單調整 */
 
 .menu {
     list-style: none;
-    display: none;
+    padding-left: 0;
+    margin-top: 0;
+    /* display: none; */
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    right: -50%;
+    transition: 0.3s;
+    background-color: white;
+    width: 50%;
+}
+
+.close-menu {
     position: absolute;
-    top: 40px;
-    right: 20px;
-    transition-duration: 0.5s;
+    right: 15px;
+    top: 3px;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .menu a,
 .menu li {
     padding: 5px 10px;
+    margin-bottom: 15px;
+    color: black;
 }
 
-.menu li {
-    border: solid 1px #f2f0f0;
-}
-
-.menu li:hover {
+.menu a:hover {
     background-color: #807d7d;
-}
-
-input {
-    display: none;
-}
-
-input:checked+.menu {
-    display: block;
 }
 
 /* 字體大小 */
@@ -193,7 +197,7 @@ h2 {
         margin-right: 10px;
     }
 
-    label {
+    .menu-img {
         display: none;
     }
 
@@ -227,7 +231,7 @@ h2 {
         margin-right: 20px;
     }
 
-    label {
+    .menu-img {
         display: none;
     }
 
