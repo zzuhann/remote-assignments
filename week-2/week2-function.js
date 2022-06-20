@@ -1,7 +1,8 @@
 // Assignment 1: Function and Array
 function max(numbers) {
-    let biggest = null;
+    let biggest;
     for (let i = 0; i < numbers.length; i++) {
+        biggest = numbers[0];
         numbers[i] > biggest ? biggest = numbers[i] : biggest = biggest;
     }
     return biggest;
@@ -30,5 +31,5 @@ function totalPrice(data) {
     for (let i = 0; i < totalProduct; i++) {
         allprice += data.products[i].price;
     }
-    return allprice * data.discount;
+    return (allprice * (1 - data.discount))
 }
