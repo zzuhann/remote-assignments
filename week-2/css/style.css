@@ -128,7 +128,7 @@ h2 {
 }
 
 /* main */
-.bottom-box.main-box {
+#bottomBox {
     display: none;
 }
 
