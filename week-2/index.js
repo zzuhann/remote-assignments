@@ -11,6 +11,7 @@ const bottomBox = document.getElementById('bottomBox');
 let w = window.innerWidth;
 
 function toggleBoxes() {
+    console.log(bottomBox.style.display)
     if (bottomBox.style.display === 'none') {
         w = window.innerWidth;
         switch (true) {
