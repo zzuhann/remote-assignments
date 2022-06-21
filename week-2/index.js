@@ -5,13 +5,14 @@ function changeText() {
     bannerText.textContent = 'Have a Good Time!'
 }
 
+const bottomBox = document.getElementById('bottomBox');
+bottomBox.style.display = 'none';
 const showMoreBtn = document.getElementById('callToAction');
 showMoreBtn.addEventListener('click', toggleBoxes);
-const bottomBox = document.getElementById('bottomBox');
 let w = window.innerWidth;
 
 function toggleBoxes() {
-    console.log(bottomBox.style.display)
+    // bottomBox.style.display === 'none';
     if (bottomBox.style.display === 'none') {
         w = window.innerWidth;
         switch (true) {

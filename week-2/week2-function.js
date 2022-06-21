@@ -33,3 +33,14 @@ function totalPrice(data) {
     }
     return (allprice * (1 - data.discount))
 }
+
+// Assignment 5: Algorithm Practice
+function twoSum(nums, target) {
+    for (let i = 0; i < nums.length; i++) {
+        let a = nums[i];
+        let b = target - a;
+        if (nums.indexOf(b) !== -1 && nums.indexOf(b) !== i) {
+            return [i, nums.indexOf(b)]
+        }
+    }
+}
