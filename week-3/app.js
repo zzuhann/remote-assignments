@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+app.use(express.static('public'));
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
@@ -9,15 +10,17 @@ app.get('/', (req, res) => {
 //     res.render('getData');
 // })
 
-app.get('/getData', (req, res, next) => {
-    const number = req.query.number;
+app.get('/getData', (req, res) => {
+    let number = req.query.number;
     let result;
     if (req.url === '/getData') {
-        next();
+        result = 'Lack of Parameter';
     }
     else if (req.url !== '/getData' && number > 0) {
+        number = Number(number);
         result = number * (number + 1) / 2;
-    } else {
+    }
+    else {
         result = 'Wrong Parameter';
     }
     res.render('getData', { result, number })

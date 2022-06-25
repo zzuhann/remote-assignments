@@ -3,8 +3,9 @@ html(lang="en")
         title Assignment
     body
         h1 Plus!
-        h1= result
         form(action='/getData', method='get')
             label Enter a number:
                 input(type='text', name='number' id='number')
             button(type='submit') Submit
+        p 結果為：
+            span#result= result

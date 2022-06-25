@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Plus!</h1>
+    <label for="number"> Enter a number:
+        <input type="text" name="number" id="number">
+    </label>
+    <button id="submit" type="submit">Submit</button>
+    <p>結果為：<span id="result"></span></p>
+
+    </form>
+</body>
+<script>
+    const result = document.getElementById('result');
+    const submit = document.getElementById('submit');
+    const body = document.body;
+
+    submit.addEventListener('click', () => {
+        const value = document.getElementById('number').value;
+
+        console.log(value)
+
+        fetch(`http://localhost:3000/getData?number=${value}`)
+            .then((response) => {
+                return response.text()
+            })
+            .then((response) => {
+                body.innerHTML = response;
+            })
+            .catch((error) => console.error(error))
+    })
+</script>
+
+</html>
